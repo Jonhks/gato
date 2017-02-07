@@ -1,0 +1,96 @@
+
+.saludo{
+	padding-top: 200px;
+	text-align: center;
+	color:#2C04F1;
+	font-size: 30px;
+}
+
+.saludo h1{
+	font-size: 50px;
+	padding-bottom: 50px;
+	color: #333;
+}
+
+
+ul{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color: #333; 
+}
+
+li{
+	float: right;
+}
+
+li a{
+	display:block;
+	color: 333; 
+	text-align:center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+ul#menu li a{
+        position: relative;
+        color:#FFF;
+        overflow:hidden;
+    }
+    ul#menu li a:before{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #333;
+        color: #ff;
+
+        content: attr(title);
+        transition: transform 0.3s ease 0s;
+    }
+    ul#menu li a span{
+        display: block;
+        position: relative;
+        padding: 10px 20px;
+        background: none repeat scroll 0% 0% #0F7C67;
+        transition: transform 0.3s ease 0s;
+        z-index: 2;
+    }
+
+    ul#menu li a:hover span{
+        transform: translatex(100%);
+    }
+
+    /*maquina escribir*/
+.contenedor {
+    margin: auto;
+    display: table;
+  }
+
+body { 
+	font-family: monospace; 
+	background: #5F5E5E;
+}
+
+.contenedor h1 { 
+	position: relative; 
+	float: left;
+	color: #fff;
+	font-size: 2.5em;
+}
+
+.contenedor h1 span {
+    position:absolute;
+    right:0;
+    width:0;
+    background:#5F5E5E ;
+    border-left: 1px solid #000;
+    animation: escribir 5s steps(30);
+}
+
+@keyframes escribir {
+    from { width: 100% }
+    to { width:0 }
+}
