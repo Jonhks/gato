@@ -13,7 +13,26 @@
 		<li><a href="index.html" title="Inicio"><span>Inicio</span></a></li>
         <li><a href="https://www.facebook.com/" title="Historial"><span>Historial</span></a></li>
 	</ul>
+	<div class="saludo">
+		<div class="ply1">
+		<span class="glyphicon glyphicon-user" aria-hidden="true"></span><span id="demo" class="espacio">Player 1</span>
+		</div>
+		<div>
+			<h2 class="versus">VS</h2>
+		</div>
+		<div class="ply2">
+			<span id="demo1" >Player 2</span><span class="glyphicon glyphicon-user espacio" aria-hidden="true">
+		</div>
+		<div>
+			<a href="gato.html"><button type="button" class="btn 	btn-success" >Comenzar</button></a>
+		</div>
+	</div>
+	<script>
+		var jugador1 = prompt("Cual es tu nombre1", "Jugador 1");
+	    var jugador2 = prompt("Cual es tu nombre2", "Jugador 2");
+		document.getElementById("demo").innerHTML = jugador1;
+		document.getElementById("demo1").innerHTML = jugador2;
 
-	
+	</script>
 </body>
 </html>
